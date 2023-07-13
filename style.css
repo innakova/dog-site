@@ -37,13 +37,13 @@ body {
     text-decoration: none;
     border-radius: 0.5rem;
     font-size: 1.6rem;
-    /* font-weight: 700; */
+    font-weight: 700;
     transition: all 0.3s ease 0s;
     flex: 0 0 auto;
 }
 
 .button:hover{
-    background-color:#4b6872;
+    background-color:#79a2af;
 }
 
 .button_blue {
@@ -63,12 +63,17 @@ body {
 
 
 .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.685);
 }
 .header__container {
     display: flex;
     align-items: center;
     column-gap: 5.7rem;
-    min-height: 5rem;
+    min-height: 7rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     font-family:'Libre Caslon Text', serif;
@@ -80,16 +85,25 @@ body {
     display: flex;
     position: relative;
     z-index: 2;
+
 }
+
+.logo_paw{
+    height: 4.7rem;
+    width: 5rem;
+}
+
+.logo_text{
+    height: 4.7rem;
+    width: 10.8rem;
+}
+
 .header__menu {
     display: flex;
     align-items: center;
     justify-content: end;
     column-gap: 1.4rem;
     
-}
-.menu {
-   
 }
 
 .icon_menu {
@@ -103,12 +117,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    column-gap: 5.7rem;
+    column-gap: 4rem;
     /* row-gap: 0.3rem; */
     justify-content: flex-end;
 }
-.menu__item {
-}
+
 .menu__link {
     display: block;
     font-size: 1.5rem;
@@ -116,8 +129,14 @@ body {
     line-height: 1.4;
     color: #000;
     text-decoration: none;
-
 }
+
+.menu__link:hover{
+    cursor: pointer;
+    color: #ffaa00;
+    text-decoration: overline;
+}
+
 .button__sign {
     flex: 0 0 auto;
 }
@@ -139,21 +158,18 @@ body {
     left: 0;
 }
 
-@media (max-width:99.198rem) {
-    .header__container,
-    .menu__list {
+@media (max-width:991.98px) {
+    .header__container{
         column-gap: 2.5rem;
     }
-    .header__container {
-        min-height: 9rem;
-    }
+ 
     .header__menu {
         justify-content: end;
         width: 100%;
     }
 }
 
-@media (max-width:76.798rem) {
+@media (max-width:767.98px) {
 
     .header__container,
     .menu__list {
@@ -175,6 +191,7 @@ body {
         width: 100%;
         height: 0.2rem;
         background-color: #000000;
+        transition: all 0.3s ease 0s;
     }
 
     .icon_menu::before {
@@ -187,12 +204,26 @@ body {
         top: calc(48% - 0.1rem);
     }
 
+    .menu-open .icon_menu span {
+        width: 0;
+    }
+
+    .menu-open .icon_menu::before{
+        top: calc(48% - 0.1rem);
+        transform: rotate(-45deg);
+    }
+
+    .menu-open .icon_menu::after{
+        bottom: calc(48% - 0.1rem);
+        transform: rotate(45deg);
+    }
+
     .menu_body {
         position: fixed;
         width: 100%;
         /* max-height: 100vh; */
         max-height: 56vh;
-        background-color: #be8484;
+        background-color: #ffffff;
         left: -100%;
         top: 0;
         padding: 10rem 1.5rem 3rem 1.5rem;
@@ -207,7 +238,7 @@ body {
         top: 0;
         left: 0;
         height: 7rem;
-        background-color: #C7E7E1;
+        background-color: #ffffff;
     }
 
     .menu__list {
@@ -224,8 +255,102 @@ body {
     }
 }
 
-@media (max-width:56rem) {
+/* @media (max-width:790px) and (min-width:767px) {
     .header__logo .logo_text {
         display: none;
+    }
+} */
+
+@media (max-width:420px) {
+    .header__logo .logo_text {
+        display: none;
+    }
+}
+
+@media (max-width:1034px) {
+    .menu__list {
+        column-gap: 2.7rem;
+    }
+}
+
+@media (max-width:1149px) {
+    html{
+        font-size: 9px;
+    }
+}
+
+@media (max-width:958px) {
+    html{
+        font-size: 8px;
+    }
+}
+
+@media (max-width:852px) {
+    html{
+        font-size: 7px;
+    }
+}
+
+
+.main_dog {
+    background-image: url("images/dog_title_image.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+    height: 69rem;
+    z-index: 1000;
+}
+
+
+/*main*/
+
+
+.page {
+}
+.page_main {
+}
+.main {
+    padding-top: 16rem;
+}
+.main__container {
+}
+.main_content {
+}
+.main_title {
+}
+.main_text {
+}
+.main_actions {
+    text-transform: uppercase;
+    
+}
+
+.pointer {
+    width: 2rem;
+    height: 1.5rem;
+    transform: rotate(0deg);
+    flex-shrink: 0;
+    stroke-width: 2px;
+    stroke: #FFF;
+}
+
+.main_button {
+}
+.button {
+}
+.main_images {
+}
+.main_dog {
+}
+
+@media (max-width:991.98px) {
+    .main {
+        padding-top: 12rem;
+    }
+}
+
+@media (max-width:767.98px) {
+    .main {
+        padding-top: 10rem;
     }
 }
