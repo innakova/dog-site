@@ -294,6 +294,7 @@ body {
 
 /*main*/
 
+/*main title */
 
 .page {
 }
@@ -306,7 +307,7 @@ body {
     background-position: center;
     position: absolute;
     width: 100%;
-    height: 76rem;
+    height: 84rem;
     z-index: -1;
 }
 .main {
@@ -374,7 +375,7 @@ body {
     background-position: right;
     background-size: contain;
     width: 100%;
-    height: 69rem;
+    height: 76rem;
     z-index: 0;
 }
 
@@ -417,5 +418,92 @@ body {
     }
     .main_dog{
         display: none;
+    }
+}
+
+/* main services*/
+
+.page_service {
+}
+.service {
+    background: linear-gradient(180deg, #f6fffd00 100%,#F6FFFD 0%, #fbfbfb00 100%);
+    /* transform: translateY(-180px);
+    z-index: -4;
+    position: relative; */
+}
+.service__container {
+    display: grid;
+    grid-row-gap: 6rem;
+    
+}
+.service_title {
+    /* margin-top: 14rem; */
+    
+}
+.title_line_menu{
+    display: flex;
+    flex-direction: column;
+}
+.serv_title {
+    color: #000;
+    font-family: Pangolin;
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.line{
+    width: 11.7rem;
+    height: 0.4rem;
+    background-color: #3A8DA8;
+    margin: 0;
+}
+.services_items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    grid-row-gap: 2rem;
+    grid-column-gap: 1rem;
+}
+.serv_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-row-gap: 2.5rem;
+    flex-shrink: 0;
+    width: 20rem;
+    height: 22.481rem;
+    flex-shrink: 0;
+}
+.green_shadow{
+    border-radius: 2.5rem;
+    border: 1px solid #98F2E1;
+    background: linear-gradient(180deg, #F9FFFE 0%, rgba(255, 255, 255, 0.00) 100%);
+    box-shadow: 0px 4px 74px 0px rgba(199, 231, 225, 0.27);
+}
+.yellow_shadow {
+    border-radius: 2.5rem;
+    border: 1px solid #FFEE94;
+    background: linear-gradient(180deg, #FFFAE0 0%, rgba(255, 255, 255, 0.00) 100%);
+    box-shadow: 0px 4px 74px 0px rgba(199, 231, 225, 0.27);
+    }
+.serv_logo {
+    width: 6.4rem;
+    height: 6.4rem;
+    flex-shrink: 0;
+}
+.serv_item_title {
+    color: #000;
+    font-family: Rubik;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media (max-width:443.98px) {
+    .service__container {
+        padding-top: 10rem;
     }
 }
