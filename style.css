@@ -626,10 +626,7 @@ body {
 }
 @media (max-width:767.98px) {
     .animation_button{
-        /* transform: translateX(calc(236% - 1vw));
-        transform: translateX(calc(257px + 1vw)); 
-    transform: translate(38rem, 2rem); */
-    transform: translateX(36vw);
+       transform: translateX(36vw);
     }
 }
 
@@ -655,4 +652,155 @@ body {
     .animation_button{
         transform: translate(57vw, 3rem);
     }
+}
+
+/* main food part*/
+
+.page_foodinfo {
+}
+.foodinfo {
+}
+.foodinfo__container {
+    display: grid;
+    grid-row-gap: 4rem;
+    padding-top: 6rem;
+}
+
+.discount_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.products {
+    color: #000;
+    font-family: Pangolin;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 2rem;
+}
+.big_text {
+    color: #000;
+    font-family: Rubik;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.button_white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #124C5F;
+    width: 18.7rem;
+    height: 5.2rem;
+    font-family: Rubik;
+    font-size: 2.2rem;        font-weight: 500;
+    padding: 0;    
+    border:0.2rem solid #124C5F;
+    cursor: pointer;       
+}
+
+.main_products {
+    display: flex;
+    justify-content: space-between;
+    grid-column-gap: 2rem;
+}
+.single_product {
+    display: flex;
+    flex-direction: column; 
+    grid-row-gap: 1rem;   
+}
+.products_photo {
+    width: 33.5rem;
+    height: 38.3rem;
+    background-size: contain;
+}
+.product_name {
+    color: #000;
+    font-family: Rubik;
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.product_datails {
+    color: #979697;
+    font-family: Rubik;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media (max-width:767.98px) {
+    .main_products{
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-row-gap: 5rem;
+    }
+    .single_product{
+        align-items: center;
+    }
+}
+
+/* main dog article*/
+
+
+.page_dog_article {
+    padding-top: 5rem;     
+}
+.article { 
+    margin-top: 5rem;
+    background: linear-gradient(180deg, #F6FFFD 0%, rgba(251, 251, 251, 0.00) 100%);
+   
+}
+.dog_article__container {
+    display: flex;      
+}
+.left_text_side {
+    flex: 0 1 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-row-gap: 2rem;    
+}
+.article_title {
+    color: #000;
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 3.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.7px;
+}
+.article_info {
+    color: #4E4C46;
+    font-family: Roboto;
+    font-size: 1.9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.37; /* 26.201px */
+    letter-spacing: 0.095rem;
+}
+.right_images_side {
+    flex: 0 0 45%;
+}
+.article_images{
+    width: 46.5rem;
+    height: 66.4rem;
+    background-size: contain;
+}
+
+@media (max-width:571.98px) {
+    .dog_article__container{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .left_text_side {
+        flex: 0 0 100%;
+        text-align: center;
+    }    
 }
