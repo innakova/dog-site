@@ -278,6 +278,11 @@ body {
         font-size: 9px;
     }
 }
+@media (max-width:1055px) {
+    html{
+        font-size: 8.2px;
+    }
+}
 
 @media (max-width:958px) {
     html{
@@ -326,7 +331,7 @@ body {
     color: #000;
     font-family: Pangolin;
     font-size: 4.4rem;
-    font-style: normal;
+    
     font-weight: 400;
     line-height: normal;
 }
@@ -339,7 +344,7 @@ body {
     color: #181817;
     font-family: Roboto;
     font-size: 1.9rem;
-    font-style: normal;
+    
     font-weight: 400;
     line-height: 1.379; 
     margin-bottom: 2rem;
@@ -454,7 +459,7 @@ body {
     color: #000;
     font-family: Pangolin;
     font-size: 2.8rem;
-    font-style: normal;
+    
     font-weight: 400;
     line-height: normal;
 }
@@ -503,7 +508,7 @@ body {
     color: #000;
     font-family: Rubik;
     font-size: 2rem;
-    font-style: normal;
+    
     font-weight: 400;
     line-height: normal;
 }
@@ -569,7 +574,7 @@ body {
     color: #FFF;
     font-family: Rubik;
     font-size: 1.6rem;
-    font-style: normal;
+    
     font-weight: 400;
     line-height: normal;
     margin-left: -0.8rem;
@@ -597,7 +602,7 @@ body {
     color: #000;
     font-family: Pangolin;
     font-size: 3.4rem;
-    font-style: normal;
+    
     font-weight: 400;
     line-height: normal;
     letter-spacing: 1.7px;
@@ -619,7 +624,7 @@ body {
     color: #4E4C46;
     font-family: Roboto;
     font-size: 1.9rem;
-    font-style: normal;
+    
     font-weight: 400;
     line-height: 1.37; /* 26.201px */
     letter-spacing: 0.95px;
@@ -675,7 +680,7 @@ body {
     color: #000;
     font-family: Pangolin;
     font-size: 4rem;
-    font-style: normal;
+    
     font-weight: 400;
     line-height: normal;
     margin-right: 2rem;
@@ -684,7 +689,7 @@ body {
     color: #000;
     font-family: Rubik;
     font-size: 4rem;
-    font-style: normal;
+    
     font-weight: 700;
     line-height: normal;
 }
@@ -722,7 +727,7 @@ body {
     color: #000;
     font-family: Rubik;
     font-size: 2.8rem;
-    font-style: normal;
+    
     font-weight: 400;
     line-height: normal;
 }
@@ -730,7 +735,7 @@ body {
     color: #979697;
     font-family: Rubik;
     font-size: 2.2rem;
-    font-style: normal;
+    
     font-weight: 400;
     line-height: normal;
 }
@@ -771,16 +776,18 @@ body {
     color: #000;
     font-family: 'Libre Caslon Text', serif;
     font-size: 3.4rem;
-    font-style: normal;
+    
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.7px;
+    text-transform: uppercase;
+
 }
 .article_info {
     color: #4E4C46;
     font-family: Roboto;
     font-size: 1.9rem;
-    font-style: normal;
+    
     font-weight: 400;
     line-height: 1.37; /* 26.201px */
     letter-spacing: 0.095rem;
@@ -803,4 +810,200 @@ body {
         flex: 0 0 100%;
         text-align: center;
     }    
+}
+
+/* main reviews*/
+
+.page_reviews {
+}
+.reviews {
+}
+.reviews__container {
+}
+
+.reviews_block {
+    display: flex;
+    justify-content: space-evenly;
+    grid-column-gap: 1rem;
+}
+.single_response {
+    line-height: 0;
+}
+.photo_customer {
+    max-width: 100%;
+    width: 36rem;
+    height: 31.1rem;
+    background-size: contain;
+}
+.customer_info {
+    background: #124C5F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-size: contain; */
+    grid-row-gap: 0.8rem;
+    padding: 1.9rem 4.3rem 3.4rem 4.3rem;
+}
+.customer_name {
+    color: #DDCA69;
+    font-family: Rubik;
+    font-size: 2.8rem;
+    
+    font-weight: 400;
+    line-height: normal;
+}
+.customer_response {
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 1.4rem;
+    
+    font-weight: 400;
+    line-height: normal;
+}
+.customer_mark {
+    display: flex;
+    align-items: center;
+    grid-column-gap: 0.9rem;
+}
+.bone_full {
+    height: 1.37rem;
+    width: 3.4rem;
+    background-size: contain;
+}
+.bone_empty {
+    height: 1.37rem;
+    width: 3.4rem;
+    background-size: contain;
+}
+.mark {
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 1.4rem;
+    
+    font-weight: 400;
+    line-height: normal;
+}
+.button_block{
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
+@media (max-width:767.98px) {
+    .reviews_block {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+  /* footer */
+
+.footer {
+}
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-row-gap: 9rem;
+    padding-top: 5rem;
+}
+.article_title {
+}
+.email_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 2rem;
+    width: 75rem;
+    height: 11.8rem;
+    background: #FFF;
+    box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.05);
+
+}
+.img_mail {
+}
+.address_place {
+    color: #414141;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.9rem;
+    
+    font-weight: 400;
+    line-height: 1.37; /* 26.201px */
+    letter-spacing: 0.95px;
+    border: none;
+}
+
+.contact_block {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.follow_box {
+    flex: 0 0 50%;
+}
+.category{
+    color: #000;
+    font-family: Rubik;
+    font-size: 1.4rem;    
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.7px;
+}
+.follow_title {
+}
+.icons {
+}
+.contact_box {
+    display: flex;
+    flex: 0 0 50%;
+
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+.left_contact {
+}
+.contact_category {
+}
+.contact_number {
+    color: #124C5F;    
+    font-family: Roboto;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.37; /* 30.338px */
+    letter-spacing: 1.1px;
+}
+.contact_address {
+    color: #757777;
+    font-family: Roboto;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 137.9%; /* 24.822px */
+    letter-spacing: 0.9px;
+}
+.right_contact {
+}
+.copyright_footer {
+}
+.copyrignt {
+    color: #414141;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.6rem;
+    
+    font-weight: 400;
+    line-height: 1.37; /* 22.064px */
+    letter-spacing: 0.8px;
+}
+.footer_nav {
+    
+}
+.menu__nav{
+    display: flex;
+}
+.menu__items{
+
 }
