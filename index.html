@@ -29,13 +29,13 @@
                             <a href="" class="menu__link">about us</a>
                         </li>
                         <li class="menu__item">
-                            <a href="" class="menu__link">products</a>
+                            <a href="#food" class="menu__link">products</a>
                         </li>
                         <li class="menu__item">
                             <a href="" class="menu__link">pet care</a>
                         </li>
                         <li class="menu__item">
-                            <a href="" class="menu__link">contact</a>
+                            <a href="#contact_block" class="menu__link">contact</a>
                         </li>
                     </ul>
                  </div>
@@ -65,8 +65,7 @@
                         </div>
                     </div>
                     <div class="main_images ">
-                        <div class="main_dog"></div>
-                        <!-- <img src="images/dog_title_image.svg" alt=""> -->
+                        <div class="main_dog"></div>                        
                     </div>
                 </div>
             </section>
@@ -105,14 +104,12 @@
             <section class="page_info info">
                 <div class="info__container">
                     <div class="left_content">
-                        <a class="animation_button" href="https://www.google.com.ua/?hl=uk" target="_blank">
-                            <!-- <div class="button_details"> -->
-                                <img class="button_spot" src="images/button_spot.svg" alt="">
-                                    <div class="button_details_play">
-                                        <img class="spot_play_vector" src="images/spot_play_vector.svg" alt="">
-                                        <span class="text_spot">Learn more</span>
-                                    </div>
-                            <!-- </div>  -->
+                        <a class="animation_button" href="https://www.google.com.ua/?hl=uk" target="_blank">                            
+                            <img class="button_spot" src="images/button_spot.svg" alt="">
+                            <div class="button_details_play">
+                                <img class="spot_play_vector" src="images/spot_play_vector.svg" alt="">
+                                <span class="text_spot">Learn more</span>
+                            </div>                            
                         </a>
                         <img class="shepard_image" src="images/shepard_dog_image_clean.svg" alt="">
                     </div>
@@ -137,7 +134,7 @@
                             <img class="pointer" src="images/pointer.svg" alt=""> 
                         </a>
                     </div>
-                    <div class="main_products">
+                    <div class="main_products" id="food">
                         <div class="single_product">
                             <img class="products_photo" src="images/foto_feed_1.svg" alt="">
                             <h4 class="product_name">Drools 3KG</h4>
@@ -238,11 +235,13 @@
         <div class="footer__container">
             <h4 class="article_title">Join us with Affiliate program</h4>
             <div class="email_block">
-                <img class="img_mail" src="images/mail_img.svg" alt="">
-                <input type="email" class="address_place" placeholder="Type your email address here"></input>
+                <div class="img_input">
+                    <img class="img_mail" src="images/mail_img.svg" alt="">
+                    <input type="email" class="address_place" placeholder="Type your email address here"></input>
+                </div>
                 <a href="" class="button button_blue main_button">Submit now<img class="pointer" src="images/pointer.svg" alt=""></a>
             </div>
-            <div class="contact_block">
+            <div class="contact_block" id="contact_block">
                 <div class="follow_box">
                     <span class="follow_title category">Follow on social</span>
                     <div class="social_icons">
